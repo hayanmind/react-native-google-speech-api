@@ -27,7 +27,7 @@ RCT_EXPORT_MODULE();
 
 - (void) recordAudio {
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryRecord error:nil];
+    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     
     _audioData = [[NSMutableData alloc] init];
     [[AudioController sharedInstance] prepareWithSampleRate:SAMPLE_RATE];

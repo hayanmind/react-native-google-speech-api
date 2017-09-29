@@ -126,7 +126,7 @@ static OSStatus playbackCallback(void *inRefCon,
   AVAudioSession *session = [AVAudioSession sharedInstance];
 
   NSError *error;
-  BOOL ok = [session setCategory:AVAudioSessionCategoryRecord error:&error];
+  BOOL ok = [session setCategory:AVAudioSessionCategoryPlayAndRecord error:&error];
   NSLog(@"set category %d", ok);
 
   // This doesn't seem to really indicate a problem (iPhone 6s Plus)
