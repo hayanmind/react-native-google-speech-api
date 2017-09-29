@@ -1,0 +1,61 @@
+PODS:
+  - '!ProtoCompiler (3.0.2)':
+    - Protobuf (~> 3.0)
+  - '!ProtoCompiler-gRPCPlugin (1.0.2)':
+    - '!ProtoCompiler (= 3.0.2)'
+    - gRPC-ProtoRPC (= 1.0.2)
+  - BoringSSL (7.0):
+    - BoringSSL/Implementation (= 7.0)
+    - BoringSSL/Interface (= 7.0)
+  - BoringSSL/Implementation (7.0):
+    - BoringSSL/Interface (= 7.0)
+  - BoringSSL/Interface (7.0)
+  - googleapis (0.0.1):
+    - '!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)'
+    - googleapis/Messages (= 0.0.1)
+    - googleapis/Services (= 0.0.1)
+  - googleapis/Messages (0.0.1):
+    - '!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)'
+    - Protobuf
+  - googleapis/Services (0.0.1):
+    - '!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)'
+    - googleapis/Messages
+    - gRPC-ProtoRPC
+  - gRPC (1.0.2):
+    - gRPC-Core (= 1.0.2)
+    - gRPC-RxLibrary (= 1.0.2)
+  - gRPC-Core (1.0.2):
+    - gRPC-Core/Implementation (= 1.0.2)
+    - gRPC-Core/Interface (= 1.0.2)
+  - gRPC-Core/Implementation (1.0.2):
+    - BoringSSL (~> 7.0)
+    - gRPC-Core/Interface (= 1.0.2)
+  - gRPC-Core/Interface (1.0.2)
+  - gRPC-ProtoRPC (1.0.2):
+    - gRPC (= 1.0.2)
+    - gRPC-RxLibrary (= 1.0.2)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.0.2)
+  - Protobuf (3.3.0)
+
+DEPENDENCIES:
+  - googleapis (from `../node_modules/react-native-google-speech-api/ios`)
+
+EXTERNAL SOURCES:
+  googleapis:
+    :path: ../node_modules/react-native-google-speech-api/ios
+
+SPEC CHECKSUMS:
+  '!ProtoCompiler': cfad9cbe5299a4923b1c3c8f150818c91efd0b6d
+  '!ProtoCompiler-gRPCPlugin': ee00d28bb35b26e2657f239833b8f2aa66724f96
+  BoringSSL: 50035b9d9eeff5529587311782fc57c00ebf13ae
+  googleapis: fc92998c8968f0e1d1bd7fe95690720dbfd4f823
+  gRPC: dd3a91e0fb770b9fc4f43d1292fb19f2a2e04158
+  gRPC-Core: cc4a7613190ff0bc60a0c1e702ef07cd3f868ae6
+  gRPC-ProtoRPC: 11533510522a5e9627883a597a796cfe6bef05f3
+  gRPC-RxLibrary: 02cc70b76bc0c5bc622ba27595cca2598d9fe528
+  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+
+PODFILE CHECKSUM: 92543e723efecbadde5f7ca864e81eaa6006204b
+
+COCOAPODS: 1.2.1

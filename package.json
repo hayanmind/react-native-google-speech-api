@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "../",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "../",
+        "spec": "/Users/KDH/PLL/react-native-google-speech-api",
+        "type": "directory"
+      },
+      "/Users/KDH/PLL/react-native-google-speech-api/ExampleApp"
+    ]
+  ],
+  "_from": "..",
+  "_id": "react-native-google-speech-api@1.0.0",
+  "_inCache": true,
+  "_location": "/react-native-google-speech-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "../",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "../",
+    "spec": "/Users/KDH/PLL/react-native-google-speech-api",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:..",
+  "_shasum": "64977beaf781c317aac4a9c09c8907f6cf3e19ed",
+  "_shrinkwrap": null,
+  "_spec": "../",
+  "_where": "/Users/KDH/PLL/react-native-google-speech-api/ExampleApp",
+  "author": "",
+  "dependencies": {},
+  "description": "## Getting started",
+  "devDependencies": {},
+  "gitHead": "4df4424d426bee9bc86051088fb5b19e5d735de5",
+  "keywords": [
+    "react-native"
+  ],
+  "license": "",
+  "main": "index.js",
+  "name": "react-native-google-speech-api",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  },
+  "readme": "\n# react-native-google-speech-api\n\n## Getting started\n\n`$ npm install react-native-google-speech-api --save`\n\n### Mostly automatic installation\n\n`$ react-native link react-native-google-speech-api`\n\n### Manual installation\n\n\n#### iOS\n\n1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`\n2. Go to `node_modules` ➜ `react-native-google-speech-api` and add `RNGoogleSpeechApi.xcodeproj`\n3. In XCode, in the project navigator, select your project. Add `libRNGoogleSpeechApi.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`\n4. Run your project (`Cmd+R`)<\n\n#### Android\n\n1. Open up `android/app/src/main/java/[...]/MainActivity.java`\n  - Add `import com.reactlibrary.RNGoogleSpeechApiPackage;` to the imports at the top of the file\n  - Add `new RNGoogleSpeechApiPackage()` to the list returned by the `getPackages()` method\n2. Append the following lines to `android/settings.gradle`:\n  \t```\n  \tinclude ':react-native-google-speech-api'\n  \tproject(':react-native-google-speech-api').projectDir = new File(rootProject.projectDir, \t'../node_modules/react-native-google-speech-api/android')\n  \t```\n3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:\n  \t```\n      compile project(':react-native-google-speech-api')\n  \t```\n\n#### Windows\n[Read it! :D](https://github.com/ReactWindows/react-native)\n\n1. In Visual Studio add the `RNGoogleSpeechApi.sln` in `node_modules/react-native-google-speech-api/windows/RNGoogleSpeechApi.sln` folder to their solution, reference from their app.\n2. Open up your `MainPage.cs` app\n  - Add `using Com.Reactlibrary.RNGoogleSpeechApi;` to the usings at the top of the file\n  - Add `new RNGoogleSpeechApiPackage()` to the `List<IReactPackage>` returned by the `Packages` method\n\n\n## Usage\n```javascript\nimport RNGoogleSpeechApi from 'react-native-google-speech-api';\n\n// TODO: What to do with the module?\nRNGoogleSpeechApi;\n```\n  ",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
