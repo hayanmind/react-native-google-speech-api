@@ -157,6 +157,8 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"COCOAPODS=1",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -165,7 +167,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../ios/Pods/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/!ProtoCompiler",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/!ProtoCompiler-gRPCPlugin",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/BoringSSL",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Protobuf",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC-Core",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC-ProtoRPC",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC-RxLibrary",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/googleapis",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -195,13 +208,28 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COCOAPODS=1",
+					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../ios/Pods/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/!ProtoCompiler",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/!ProtoCompiler-gRPCPlugin",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/BoringSSL",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Protobuf",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC-Core",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC-ProtoRPC",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/gRPC-RxLibrary",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/googleapis",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

@@ -34,11 +34,11 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ExampleAppTests.m */; };
+		357F373D07F9452BA9BFE3A5 /* libRNGoogleSpeechApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FB492D7EBE4723B05660E6 /* libRNGoogleSpeechApi.a */; };
+		4AC8DFCC5E55E8FF7374BD61 /* libPods-ExampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B70FADA3C5B7BE00CF49EF /* libPods-ExampleApp.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		BCF7180785092F3F9CE5B89A /* libPods-ExampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A91FCC3BD61CFB7861D34F9 /* libPods-ExampleApp.a */; };
-		DBCEB0CD59E54F90A6141668 /* libRNGoogleSpeechApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0372E00E1924B4AABB5781A /* libRNGoogleSpeechApi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +217,13 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
+		7670FB701F7F62C3008B28F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3750BB2618BE4A2B813EB357 /* RNGoogleSpeechApi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNGoogleSpeechApi;
+		};
 		768ABD651F7E2D95009CDEFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -244,13 +251,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
-		};
-		768ABF4C1F7F32E9009CDEFB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D82A4852AC754C8EA6FD769F /* RNGoogleSpeechApi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNGoogleSpeechApi;
 		};
 		76BF13991F7E1E2D001C5A7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -304,14 +304,14 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ExampleApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExampleApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ExampleApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExampleApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A91FCC3BD61CFB7861D34F9 /* libPods-ExampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3750BB2618BE4A2B813EB357 /* RNGoogleSpeechApi.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSpeechApi.xcodeproj; path = "../node_modules/react-native-google-speech-api/ios/RNGoogleSpeechApi.xcodeproj"; sourceTree = "<group>"; };
 		59924A7B4A8C4473F6E8ACD0 /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		94B70FADA3C5B7BE00CF49EF /* libPods-ExampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		D82A4852AC754C8EA6FD769F /* RNGoogleSpeechApi.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSpeechApi.xcodeproj; path = "../node_modules/react-native-google-speech-api/ios/RNGoogleSpeechApi.xcodeproj"; sourceTree = "<group>"; };
-		F0372E00E1924B4AABB5781A /* libRNGoogleSpeechApi.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSpeechApi.a; sourceTree = "<group>"; };
+		C7FB492D7EBE4723B05660E6 /* libRNGoogleSpeechApi.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSpeechApi.a; sourceTree = "<group>"; };
 		FA56BC2CA6BBD2D48261EFA3 /* Pods-ExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,8 +341,8 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				BCF7180785092F3F9CE5B89A /* libPods-ExampleApp.a in Frameworks */,
-				DBCEB0CD59E54F90A6141668 /* libRNGoogleSpeechApi.a in Frameworks */,
+				4AC8DFCC5E55E8FF7374BD61 /* libPods-ExampleApp.a in Frameworks */,
+				357F373D07F9452BA9BFE3A5 /* libRNGoogleSpeechApi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,10 +490,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		768ABF491F7F32E9009CDEFB /* Products */ = {
+		7670FB6D1F7F62C3008B28F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				768ABF4D1F7F32E9009CDEFB /* libRNGoogleSpeechApi.a */,
+				7670FB711F7F62C3008B28F8 /* libRNGoogleSpeechApi.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -501,7 +501,7 @@
 		76BF13931F7E1E2B001C5A7F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				F0372E00E1924B4AABB5781A /* libRNGoogleSpeechApi.a */,
+				C7FB492D7EBE4723B05660E6 /* libRNGoogleSpeechApi.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -530,7 +530,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				D82A4852AC754C8EA6FD769F /* RNGoogleSpeechApi.xcodeproj */,
+				3750BB2618BE4A2B813EB357 /* RNGoogleSpeechApi.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -583,7 +583,7 @@
 		BFD30744C7DF8095ADC37C47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A91FCC3BD61CFB7861D34F9 /* libPods-ExampleApp.a */,
+				94B70FADA3C5B7BE00CF49EF /* libPods-ExampleApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -769,8 +769,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 768ABF491F7F32E9009CDEFB /* Products */;
-					ProjectRef = D82A4852AC754C8EA6FD769F /* RNGoogleSpeechApi.xcodeproj */;
+					ProductGroup = 7670FB6D1F7F62C3008B28F8 /* Products */;
+					ProjectRef = 3750BB2618BE4A2B813EB357 /* RNGoogleSpeechApi.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -945,6 +945,13 @@
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7670FB711F7F62C3008B28F8 /* libRNGoogleSpeechApi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGoogleSpeechApi.a;
+			remoteRef = 7670FB701F7F62C3008B28F8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		768ABD661F7E2D95009CDEFB /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -971,13 +978,6 @@
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
 			remoteRef = 768ABD6B1F7E2D95009CDEFB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		768ABF4D1F7F32E9009CDEFB /* libRNGoogleSpeechApi.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNGoogleSpeechApi.a;
-			remoteRef = 768ABF4C1F7F32E9009CDEFB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		76BF139A1F7E1E2D001C5A7F /* libRCTBlob-tvOS.a */ = {
