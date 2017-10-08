@@ -1,42 +1,48 @@
 PODS:
-  - '!ProtoCompiler (3.0.2)':
+  - '!ProtoCompiler (3.4.0)':
     - Protobuf (~> 3.0)
-  - '!ProtoCompiler-gRPCPlugin (1.0.2)':
-    - '!ProtoCompiler (= 3.0.2)'
-    - gRPC-ProtoRPC (= 1.0.2)
-  - BoringSSL (7.0):
-    - BoringSSL/Implementation (= 7.0)
-    - BoringSSL/Interface (= 7.0)
-  - BoringSSL/Implementation (7.0):
-    - BoringSSL/Interface (= 7.0)
-  - BoringSSL/Interface (7.0)
+  - '!ProtoCompiler-gRPCPlugin (1.6.5)':
+    - '!ProtoCompiler (= 3.4.0)'
+    - gRPC-ProtoRPC (= 1.6.5)
+  - BoringSSL (9.0):
+    - BoringSSL/Implementation (= 9.0)
+    - BoringSSL/Interface (= 9.0)
+  - BoringSSL/Implementation (9.0):
+    - BoringSSL/Interface (= 9.0)
+  - BoringSSL/Interface (9.0)
   - googleapis (0.0.1):
-    - '!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)'
+    - '!ProtoCompiler-gRPCPlugin (~> 1.6)'
     - googleapis/Messages (= 0.0.1)
     - googleapis/Services (= 0.0.1)
   - googleapis/Messages (0.0.1):
-    - '!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)'
+    - '!ProtoCompiler-gRPCPlugin (~> 1.6)'
     - Protobuf
   - googleapis/Services (0.0.1):
-    - '!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)'
+    - '!ProtoCompiler-gRPCPlugin (~> 1.6)'
     - googleapis/Messages
     - gRPC-ProtoRPC
-  - gRPC (1.0.2):
-    - gRPC-Core (= 1.0.2)
-    - gRPC-RxLibrary (= 1.0.2)
-  - gRPC-Core (1.0.2):
-    - gRPC-Core/Implementation (= 1.0.2)
-    - gRPC-Core/Interface (= 1.0.2)
-  - gRPC-Core/Implementation (1.0.2):
-    - BoringSSL (~> 7.0)
-    - gRPC-Core/Interface (= 1.0.2)
-  - gRPC-Core/Interface (1.0.2)
-  - gRPC-ProtoRPC (1.0.2):
-    - gRPC (= 1.0.2)
-    - gRPC-RxLibrary (= 1.0.2)
+  - gRPC (1.6.5):
+    - gRPC-Core (= 1.6.5)
+    - gRPC-RxLibrary (= 1.6.5)
+  - gRPC-Core (1.6.5):
+    - gRPC-Core/Implementation (= 1.6.5)
+    - gRPC-Core/Interface (= 1.6.5)
+  - gRPC-Core/Implementation (1.6.5):
+    - BoringSSL (~> 9.0)
+    - gRPC-Core/Interface (= 1.6.5)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.6.5)
+  - gRPC-ProtoRPC (1.6.5):
+    - gRPC (= 1.6.5)
+    - gRPC-RxLibrary (= 1.6.5)
     - Protobuf (~> 3.0)
-  - gRPC-RxLibrary (1.0.2)
-  - Protobuf (3.3.0)
+  - gRPC-RxLibrary (1.6.5)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.4.0)
 
 DEPENDENCIES:
   - googleapis (from `../node_modules/react-native-google-speech-api/ios`)
@@ -46,15 +52,16 @@ EXTERNAL SOURCES:
     :path: ../node_modules/react-native-google-speech-api/ios
 
 SPEC CHECKSUMS:
-  '!ProtoCompiler': cfad9cbe5299a4923b1c3c8f150818c91efd0b6d
-  '!ProtoCompiler-gRPCPlugin': ee00d28bb35b26e2657f239833b8f2aa66724f96
-  BoringSSL: 50035b9d9eeff5529587311782fc57c00ebf13ae
-  googleapis: fc92998c8968f0e1d1bd7fe95690720dbfd4f823
-  gRPC: dd3a91e0fb770b9fc4f43d1292fb19f2a2e04158
-  gRPC-Core: cc4a7613190ff0bc60a0c1e702ef07cd3f868ae6
-  gRPC-ProtoRPC: 11533510522a5e9627883a597a796cfe6bef05f3
-  gRPC-RxLibrary: 02cc70b76bc0c5bc622ba27595cca2598d9fe528
-  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+  '!ProtoCompiler': 07d0c441bc00e7f01e84debf7c53794683fbca7c
+  '!ProtoCompiler-gRPCPlugin': dfc8eead3e132b22750b0ec7f5fe4774ef98362a
+  BoringSSL: 19083b821ef3ae0f758fae15482e183003b1e265
+  googleapis: a6170b59f92b79a20bc8aff3f140900d9dc5054c
+  gRPC: 42f915ce322b1abc5241621acc776f2fdb0a2039
+  gRPC-Core: 54211a073d238ec8569be06e1a939a72f081a3e9
+  gRPC-ProtoRPC: 4299db62f86df58c88844ccb50f5c48993e704f6
+  gRPC-RxLibrary: 1b1c9c9cf666709ad7714cb0e0f3c44dc0cbfb0b
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
 
 PODFILE CHECKSUM: 92543e723efecbadde5f7ca864e81eaa6006204b
 
