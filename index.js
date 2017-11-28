@@ -43,6 +43,7 @@ class RCTGoogleSpeechApi {
     }
     return new Promise((resolve, reject) => {
       RNGoogleSpeechApi.startSpeech(locale);
+      resolve();
     });
   }
   stop() {
@@ -59,6 +60,7 @@ class RCTGoogleSpeechApi {
   cancel() {
     return new Promise((resolve, reject) => {
       RNGoogleSpeechApi.cancelSpeech();
+      resolve();
     });
   }
   isAvailable() {

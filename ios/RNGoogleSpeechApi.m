@@ -1,3 +1,5 @@
+// DO NOT something to effect to global AVAudioSession like setCategory.
+// It is highly recommended to do this in JS to avoid conflict with other native modules.
 
 #import <AVFoundation/AVFoundation.h>
 
@@ -26,9 +28,6 @@ RCT_EXPORT_MODULE();
 }
 
 - (void) recordAudio {
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-    
     _audioData = [[NSMutableData alloc] init];
     [[AudioController sharedInstance] prepareWithSampleRate:SAMPLE_RATE];
     [[SpeechRecognitionService sharedInstance] setSampleRate:SAMPLE_RATE];
